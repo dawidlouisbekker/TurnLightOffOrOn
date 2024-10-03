@@ -10,7 +10,7 @@ bool on = false;
 
 template <typename... Words>    //std:c++ 17 or higher
 bool IsInputStringThis(std::string line, Words... words) {
-	return ((words == line) && ...);
+	return ((words == line) || ...);
 };
 
 
@@ -19,14 +19,14 @@ template <typename... Words> //std:c++ 17 or higher for the "...", it is an args
 bool IsInputStreamThis(iostream& in_cin, Words... words) { //Program will freeze if you use this because '&' is in iostream& so it locks memory I think (refrence variable) and does not make copy.
 	string line;
 	getline(in_cin, line);
-	return ((words == line) && ...);
+	return ((words == line) || ...);
 };
 
 template <typename... Words>
 bool IsInputThis(Words... words) {
 	string line;
 	getline(std::cin, line);
-	return ((words == line) && ...);
+	return ((words == line) || ...);
 };
 
 static void PromptUser() {
