@@ -24,10 +24,10 @@ int main()
         bool wasRead = false;
         if (IsInputStringThis<std::string>(inputLine, "On", "on", "oN", "ON") == true) {                  //Bag Of words          
             if (isOn == true) {
-                std::cout << "turned on" << std::endl;
+                std::cout << "already turned on" << std::endl;
             }
             if (isOn == false) {
-                std::cout << "already turned on" << std::endl;
+                std::cout << "turned on" << std::endl;
             }
             isOn = true;
             wasRead = true;
