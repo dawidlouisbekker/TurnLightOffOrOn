@@ -5,7 +5,7 @@
 bool isOn = false;
 
 template <typename... Words>
-bool IsInputStringThis(const std::string line, Words... words) {
+bool IsInputStringThis(const std::string line, Words... words) {  //after a long troublesome while I realised "const" in (const std::string line, Words... words) is needed
     return ((line == words) || ...);
 }
 
