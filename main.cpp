@@ -6,7 +6,7 @@
 using namespace std;
 
 std::string line = "";
-bool on = NULL;
+bool on = false;
 
 template <typename... Words>    //std:c++ 17 or higher
 bool IsInputStringThis(std::string line, Words... words) {
