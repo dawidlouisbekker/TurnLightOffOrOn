@@ -40,12 +40,12 @@ bool prompt_user_with_and_use_IsInputStringThis() {
 	getline(std::cin, line);
 	if (IsInputStringThis(line, "Yes", "yes", "y")) {
 		on = true;
-		cout << "Turned Light Buld on" << endl;
+		cout << "Turned Light Bulb on" << endl;
 		//could also do this // return false;
 	}
 	if (IsInputStringThis(line, "No, no, n")) {
 		on = false;
-		cout << "Turned Light Buld off";
+		cout << "Turned Light Bulb off";
 		//could also do this // return false;
 	}
 	if (on != true && on != false) {
