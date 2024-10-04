@@ -1,6 +1,41 @@
 #include <iostream>
 #include <string>
 
+/*    template <typename To>
+    bool TryConvertStr(std::string& from, To& to) {
+        if (typeid(from) == typeid(std::string)) {
+            if (typeid(to) == typeid(float)) {
+                to = stof(from);
+                return true;
+            }
+
+            if (typeid(to) == typeid(int)) {
+                to = stoi(from);
+                return true;
+            }
+
+            if (typeid(to) == typeid(long)) {
+                to = stol(from);
+                return true;
+            }
+
+            if (typeid(to) == typeid(long long)) {
+                to = stoll(from);
+                return true;
+            }
+
+            if (typeid(to) == typeid(double)) {
+                to = stod(from);
+                return true;
+            }
+
+            if (typeid(to) == typeid(long double)) {
+                to = stold(from);
+                return true;
+            }
+
+            return false;
+        }*/
 
 bool isOn = false;
 
